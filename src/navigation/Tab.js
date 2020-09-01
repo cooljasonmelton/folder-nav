@@ -5,7 +5,7 @@ const Tab = props => {
   const {name, active, setActive} = props
 
   const setClass = () => {
-    const classArr = ["Tab"]
+    const classArr = ["Tab", "cfb"]
     if (active === name) classArr.push('active-tab')
     return classArr.join(' ')
   }

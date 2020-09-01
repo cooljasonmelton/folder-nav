@@ -5,9 +5,10 @@ import './TabContainer.css';
 
 // components
 import Tab from './Tab';
+import DisplayContainer from './DisplayContainer';
 
 const TabContainer = () => {
-  const [active, setActive] = useState('')
+  const [active, setActive] = useState('dog')
 
   const tabNames = [
     "dog",
@@ -26,8 +27,10 @@ const TabContainer = () => {
 
   return (
     <div className="TabContainer">
-      {renderTabs}
-
+      <div className="tabs-div">
+        {renderTabs}
+      </div>
+      <DisplayContainer/>
     </div>
   );
 }

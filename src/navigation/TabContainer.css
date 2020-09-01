@@ -1,16 +1,40 @@
 .TabContainer{
-    border: 1px solid black;
     width: 70%;
-    height: 500px;
-    display: flex;
+}
+
+.DisplayContainer{
+    position: relative;
+    border: 1px solid black;
+    border-top: none;
+    width: 100%;
+    min-height: 500px;
     background-color: #FFEEDD;
+}
+
+.display-top{
+    position: absolute;
+    border: none;
+    top: -1px;
+    right: 0;
+    padding: 0;
+    margin: 0;
+    height: 1px; 
+    background-color: black;
+    width: 50%;
+}
+
+.tabs-div{
+    width: 50%;
+    display: flex;
 }
 
 .Tab{
     border: 1px solid black;
-    width: 10%;
-    height: 10%;
+    border-radius: 0.5em 0.5em 0 0;
+    width: 25%;
+    min-height: 50px;
     background-color: #FFD8BE;
+    cursor: pointer;
 }
 
 .active-tab{
