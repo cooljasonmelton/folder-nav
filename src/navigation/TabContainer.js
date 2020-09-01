@@ -17,7 +17,11 @@ const TabContainer = () => {
   ]
 
   const renderTabs = tabNames.map(name => {
-    return <Tab active={active} name={name}/>
+    return (
+      <Tab name={name}
+        active={active} 
+        setActive={() => setActive(name)}/>
+    )
   })
 
   return (

@@ -8,7 +8,7 @@ import TabContainer from './navigation/TabContainer';
 
 const App = () => {
   return (
-    <div className="App">
+    <div className="App cfb">
       <TabContainer/>
 
     </div>
