@@ -1,0 +1,17 @@
+.TabContainer{
+    border: 1px solid black;
+    width: 70%;
+    height: 500px;
+    display: flex;
+}
+
+.Tab{
+    border: 1px solid black;
+    width: 10%;
+    height: 10%;
+}
+
+.active-tab{
+    border-bottom: none
+    
+}

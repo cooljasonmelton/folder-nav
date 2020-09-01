@@ -1,9 +1,15 @@
 import React from 'react';
+
+// styling
 import './App.css';
 
-function App() {
+// components
+import TabContainer from './navigation/TabContainer';
+
+const App = () => {
   return (
     <div className="App">
+      <TabContainer/>
 
     </div>
   );
