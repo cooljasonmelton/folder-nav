@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { lookUpImage } from '../images/index'
 
 // styling
 import './TabContainer.css';
@@ -30,7 +31,7 @@ const TabContainer = () => {
       <div className="tabs-div">
         {renderTabs}
       </div>
-      <DisplayContainer/>
+      <DisplayContainer imgSrc={lookUpImage[active]} active={active}/>
     </div>
   );
 }
